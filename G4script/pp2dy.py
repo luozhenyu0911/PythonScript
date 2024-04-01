@@ -28,7 +28,7 @@ parser = argparse.ArgumentParser(description="This tool creates scores and profi
                                  epilog=example_text)                            #在参数帮助文档之后显示的文本（默认值：无）
 group=parser.add_mutually_exclusive_group(required= True)
 group.add_argument('--referencePoint',type=str,help="<referencePoint {start or end}>"+"\t"+"plot the distribution of the reads at reference point from the genome. This option is mutually exclusive with \"--scaleRegion\".",metavar='')
-group.add_argument('--scaleRegion',action='store_true',help="<Scaled Region>"+"\t"+"plot the distribution of the reads over the region from the genome. This option is mutually exclusive with \"--referencePoint\".")
+group.add_argument('--scaleRegion',action='store_true',help="<Scaled Region>"+"\t"+"plot the distribution of the reads over the region from the genome. This option is mutually exclusive with \"--referencePoint\".",metavar='')
 
 parser.add_argument('--control', '-c',type= str,help="<Input bam files>"+"\t"+"Control data files(Support for multiple files, Separated by commas, the order is consistent with bam files), should be sorted bam format. \n                  Note: If you have N treatment bam files, and they have the same input bam file, please repeat the input bam file N times; otherwise please pair an input bam file for each treatment bam file.",metavar='')
 parser.add_argument('--bam','-b',type= str,help="<bam or sam files>"+"\t"+"data files(Support for multiple files, Separated by commas), should be sorted format.(Note: Need to filter out low-quality reads first).",required= True,metavar='')
