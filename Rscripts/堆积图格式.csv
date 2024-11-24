@@ -1,0 +1,13 @@
+﻿Name,Type,Amount,Left
+D4 / D12,+,90,up
+D4 / D12,-,42,up
+D4 / D12,#,138,up
+D4 / D12,+,62,down
+D4 / D12,-,106,down
+D4 / D12,#,178,down
+L4 / L12,+,88,up
+L4 / L12,-,47,up
+L4 / L12,#,150,up
+L4 / L12,+,51,down
+L4 / L12,-,70,down
+L4 / L12,#,98,down
